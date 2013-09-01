@@ -5,7 +5,7 @@
 
 #pragma once
 
-#define _WIN32_WINNT 0x0501
+#define _WIN32_WINNT 0x0600
 #define WIN32_LEAN_AND_MEAN		// Exclude rarely-used stuff from Windows headers
 
 //////////////////////////////////////////////////////////////////////////////
@@ -32,6 +32,8 @@ using namespace std;
 #include <boost/smart_ptr.hpp>
 #include <boost/algorithm/string/trim.hpp>
 using namespace boost;
+#define shared_ptr boost::shared_ptr
+#define bind boost::bind
 #pragma warning(pop)
 
 #include "../shared/SharedMemory.h"
